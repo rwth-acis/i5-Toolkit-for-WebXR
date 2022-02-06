@@ -7,6 +7,7 @@ The i5 Toolkit for WebXR is a collection of utilities that help to develop WebXR
 
 ## Local Development Setup
 
+
 ## Tipical Development Scenarious
 
 ### See the Examples
@@ -46,4 +47,7 @@ The dist folder is the place where the bundled JS files, created by webpack, are
 Afterward the changes are visible. You can follow the instructions in the See the Examples section to view the examples in your browser.
 
 ### Updating the version
-To create publish a new version, first one needs to increse the version. This can be done by the command npm version patch. The module can then be published to npm via npm publish. This requires the npm account credentials.
+To update the version it is required to be logged in with an account that has the right to update the npm package.
+When you have acces to such an account you can add it with `npm adduser`. Afterwards follow those steps to update the package at npm.
+
+1. 

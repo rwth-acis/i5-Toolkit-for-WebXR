@@ -4,6 +4,7 @@ import { VRButton } from 'three/examples/jsm/webxr/VRButton.js';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { HelloGreeter } from 'i5-Toolkit-for-WebXR';
 import { Greeter } from 'i5-Toolkit-for-WebXR';
+import { LoadingIndicator } from 'i5-Toolkit-for-WebXR';
 
 console.log(HelloGreeter("Lukas") + " and " + Greeter("Lukas") );
 
@@ -17,7 +18,7 @@ let container;
 let camera, scene, renderer;
 
 //user global variables
-let cube;
+let myLoadingIndicator;
 
 //function calls
 init();
@@ -67,8 +68,9 @@ function onWindowResize() {
 }
 
 function render(time) {
-    // Rotate the cube
-    cube.rotation.y = time / 1000;
+    
+    myLoadingIndicator.render(time);
+
     // Draw everything
     renderer.render(scene, camera);
 }
@@ -76,10 +78,6 @@ function render(time) {
 // user functions
 
 function setup(){
-    cube = new THREE.Mesh(
-        new THREE.BoxBufferGeometry(1,1,1),
-        new THREE.MeshLambertMaterial({color:'red'})
-    );
-    cube.position.set(0, 1.5, -10);
-    scene.add(cube);
+    myLoadingIndicator = new LoadingIndicator(0, 1.5, -10);
+    myLoadingIndicator.addToScene(scene);
 }
