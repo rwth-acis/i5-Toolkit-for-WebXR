@@ -1,5 +1,5 @@
 {
-  "name": "i5-Toolkit-for-WebXR",
+  "name": "i5-toolkit-for-webxr",
   "version": "1.0.0",
   "description": "The i5 Toolkit for WebXR is a collection of utilities that help to develop WebXR applications that are build with three.js.",
   "main": "lib/index.js",
