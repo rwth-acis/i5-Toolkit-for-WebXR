@@ -19,13 +19,11 @@ export class LoadingIndicator{
     }
 
     addToScene(scene: THREE.Scene){
-        console.log("add to scene");
         this.cube.position.set(this.xPos, this.yPos, this.zPos);
         scene.add(this.cube);
     }
 
     render(time: number){
-        console.log("render: " + time);
         this.cube.rotation.y = time / 1000;
     }
 }
