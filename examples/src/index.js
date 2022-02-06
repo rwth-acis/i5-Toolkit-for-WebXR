@@ -2,7 +2,7 @@ import * as THREE from 'three';
 import { ARButton } from 'three/examples/jsm/webxr/ARButton.js';
 import { VRButton } from 'three/examples/jsm/webxr/VRButton.js';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
-import { Greeter } from 'i5-Toolkit-for-WebXR';
+import { Greeter } from 'i5-tk-webxr';
 
 console.log("hello");
 console.log(Greeter("Lukas"));
