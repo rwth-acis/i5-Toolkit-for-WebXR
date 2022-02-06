@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+h1 {
+	font-family: 'Roboto', sans-serif;
+}
+
+#examples {
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+  }
+  
+  #examples td, #examples th {
+	border: 1px solid #ddd;
+	padding: 8px;
+  }
+  
+  #examples tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #examples tr:hover {background-color: #ddd;}
+  
+  #examples th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: rgb(67, 144, 237);
+	color: white;
+  }
