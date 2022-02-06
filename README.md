@@ -25,9 +25,9 @@ To a add a new example one should use the following steps:
 The dist folder is the place where the bundled JS files, created by webpack, are stored. To create them one has to bundle each js files in source before seeing their changes reflected. So for each change you want to see represented in the examle you should do the following:
 
 4. Open a terminal in the examples directory. 
-``cd examples```
+`cd examples`
 5. Bundle the src files.
-``npm run build```
+`npm run build`
 
 Afterward the changes are visible. You can follow the instructions in the See the Examples section to view the examples in your browser.
 
