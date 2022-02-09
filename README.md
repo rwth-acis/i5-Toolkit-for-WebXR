@@ -50,4 +50,6 @@ Afterward the changes are visible. You can follow the instructions in the See th
 To update the version it is required to be logged in with an account that has the right to update the npm package.
 When you have acces to such an account you can add it with `npm adduser`. Afterwards follow those steps to update the package at npm.
 
-1. 
+1. Push all the updates to Git.
+2. Patch a new version of the package with `npm patch``
+3. Then `npm publish`will automatically trigger all the neccessary steps like building, testing, and linting to finally oublish a new version.
