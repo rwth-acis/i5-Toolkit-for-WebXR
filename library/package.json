@@ -1,0 +1,53 @@
+{
+  "name": "i5-tk-webxr",
+  "version": "0.0.1",
+  "description": "The i5 Toolkit for WebXR is a collection of utilities that help to develop WebXR applications that are build with three.js.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rwth-acis/i5-Toolkit-for-WebXR.git"
+  },
+  "keywords": [
+    "WebXR",
+    "placing",
+    "AR",
+    "VR",
+    "XR"
+  ],
+  "author": "i5 Chair at RWTH Aachen University",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rwth-acis/i5-Toolkit-for-WebXR/issues"
+  },
+  "homepage": "https://github.com/rwth-acis/i5-Toolkit-for-WebXR#readme",
+  "devDependencies": {
+    "@types/jest": "^27.4.0",
+    "@types/three": "^0.136.1",
+    "http-server": "^14.1.0",
+    "jest": "^27.4.7",
+    "prettier": "^2.5.1",
+    "rollup": "^2.66.1",
+    "ts-jest": "^27.1.3",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.5.5"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "dependencies": {
+    "three": "^0.136.0"
+  }
+}

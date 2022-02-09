@@ -1,0 +1,318 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 3813,
+      "max": [
+        1.2546999454498291,
+        1.2546999454498291,
+        8.9016895294189453
+      ],
+      "min": [
+        -1.2546999454498291,
+        -1.3403500318527222,
+        0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 45756,
+      "componentType": 5126,
+      "count": 3813,
+      "max": [
+        0.99999970197677612,
+        0.99999803304672241,
+        1
+      ],
+      "min": [
+        -0.99999970197677612,
+        -0.99999803304672241,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 3813,
+      "max": [
+        0.99999475479125977,
+        0.99998372793197632,
+        0.99999970197677612,
+        1
+      ],
+      "min": [
+        -0.99999475479125977,
+        -0.99998372793197632,
+        -1,
+        -1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 91512,
+      "componentType": 5126,
+      "count": 3813,
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "min": [
+        0.99215686321258545,
+        0.99215686321258545,
+        0.99215686321258545
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 3813,
+      "max": [
+        0.99054998159408569,
+        0.99879002571105957
+      ],
+      "min": [
+        0.016939999535679817,
+        0.0079600000753998756
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 30504,
+      "componentType": 5126,
+      "count": 3813,
+      "max": [
+        0.99054998159408569,
+        0.99879002571105957
+      ],
+      "min": [
+        0.016939999535679817,
+        0.0079600000753998756
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 61008,
+      "componentType": 5126,
+      "count": 3813,
+      "max": [
+        0.99054998159408569,
+        0.99879002571105957
+      ],
+      "min": [
+        0.016939999535679817,
+        0.0079600000753998756
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 9297,
+      "max": [
+        3812
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "3DHaupt (https://sketchfab.com/dennish2010)",
+      "license": "CC-BY-NC-ND-4.0 (http://creativecommons.org/licenses/by-nc-nd/4.0/)",
+      "source": "https://sketchfab.com/3d-models/kickelhahn-tower-weyeuTkdMADFF53EZq4U38mmx3P",
+      "title": "Kickelhahn Tower"
+    },
+    "generator": "Sketchfab-4.97.2",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 37188,
+      "byteOffset": 0,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 91512,
+      "byteOffset": 37188,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 137268,
+      "byteOffset": 128700,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 61008,
+      "byteOffset": 265968,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 326976,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/Material.000_normal.png"
+    },
+    {
+      "uri": "textures/Material.000_baseColor.jpeg"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "Material.000",
+      "normalTexture": {
+        "index": 0,
+        "scale": 1,
+        "texCoord": 0
+      },
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "baseColorTexture": {
+          "index": 1,
+          "texCoord": 0
+        },
+        "metallicFactor": 0,
+        "roughnessFactor": 0.75649899659999997
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "KH_TowerHigh.003_0",
+      "primitives": [
+        {
+          "attributes": {
+            "COLOR_0": 3,
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 4,
+            "TEXCOORD_1": 5,
+            "TEXCOORD_2": 6
+          },
+          "indices": 7,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [
+        -0.70710678118654746,
+        -0,
+        -0,
+        0.70710678118654757
+      ]
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "RootNode (model correction matrix)"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "Root"
+    },
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        2.5024399999999996,
+        -1.28264,
+        0,
+        0,
+        1.28264,
+        2.5024399999999996,
+        0,
+        0,
+        0,
+        0,
+        2.7000000000000002,
+        0,
+        0.96940999999999999,
+        0,
+        1.11602,
+        1
+      ],
+      "name": "KH_TowerHigh.003"
+    },
+    {
+      "mesh": 0,
+      "name": "KH_TowerHigh.003_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "OSG_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    }
+  ]
+}
+
