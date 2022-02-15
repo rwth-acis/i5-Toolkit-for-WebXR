@@ -3,12 +3,32 @@ The i5 Toolkit for WebXR is a collection of utilities that help to develop WebXR
 
 ## Installation
 
+### Installation for Usage
+
+The library can be installed via npm:
+
+``npm install i5-tk-webxr``
+
+### Installation for Developing and Contributing
+
+After cloning this project one should perform the following steps to setup the development environment correctly.
+
+1. Go to the library folder with `cd library`.
+2. Install all the dependencies with `npm install`.
+3. Link the library to the global packages with `npm link`.
+4. Go to the examples folder with `cd ../examples`.
+5. Install all the dependencies with `npm install`.
+6. Connect the locally linked library with `npm link i5-tk-webxr`.
+
 ## Usage
+The following list contains an overviw of the features this library supports:
 
-## Local Development Setup
+| Logo | Name              | Description                                 |
+|------|-------------------|---------------------------------------------|
+| [/]  | Loading Indicator | Visualizes loading time.                    |
+| [/]  | Placement Helper  | Lets the user place objects in an AR Scene. |
 
-
-## Tipical Development Scenarious
+## Contribute to the library
 
 ### See the Examples
 To see the examples in your browser use the following steps:
