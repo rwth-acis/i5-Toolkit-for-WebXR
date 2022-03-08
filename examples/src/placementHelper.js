@@ -2,6 +2,7 @@ import * as THREE from 'three';
 import { ARButton } from 'three/examples/jsm/webxr/ARButton.js';
 import { VRButton } from 'three/examples/jsm/webxr/VRButton.js';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { PlacementHelper } from 'i5-tk-webxr';
 
 //CONST
 const USEAR = true;
@@ -17,6 +18,9 @@ let cube;
 
 //function calls
 init();
+
+//placement helper
+let placementhelper;
 
 //function declaraions
 
@@ -41,7 +45,7 @@ function init() {
     
     container.appendChild( renderer.domElement );
 
-    if(USEAR) document.body.appendChild( ARButton.createButton(renderer));
+    if(USEAR) document.body.appendChild( ARButton.createButton(renderer, { requiredFeatures: [ 'hit-test' ] }));
     if(USEVR) document.body.appendChild( VRButton.createButton(renderer));
 
     setup();
@@ -63,10 +67,13 @@ function onWindowResize() {
     renderer.setSize( window.innerWidth, window.innerHeight );
 }
 
-function render(time) {
+function render(time, frame) {
 
     // Rotate the cube
     cube.rotation.y = time / 1000;
+
+    //placement Tool
+    placementhelper.render(time, frame);
 
     // Draw everything
     renderer.render(scene, camera);
@@ -75,6 +82,8 @@ function render(time) {
 // user functions
 
 function setup(){
+
+    placementhelper = new PlacementHelper(scene, renderer);
 
     cube = new THREE.Mesh(
         new THREE.BoxBufferGeometry(1,1,1),

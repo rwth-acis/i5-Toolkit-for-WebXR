@@ -1,4 +1,5 @@
-export  * from './loadingIndicator';
+export * from './loadingIndicator';
+export * from './placementHelper';
 
 export const Greeter = (name: string) => `Hi ${name}`;
 
